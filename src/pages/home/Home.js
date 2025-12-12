@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import ProductsList from "../../components/ProductsList";
 function Home() {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(
-    localStorage.getItem("loginStatus")|| false
+    localStorage.getItem("uid")|| " "
     );
 
   const [products, setProducts] = useState([]);
 
 
   const logoutUser = ()=>{
-    localStorage.setItem("loginStatus", false);
+    localStorage.setItem("uid", ' ');
     setIsUserLoggedIn(false);
   }
 
