@@ -2,6 +2,8 @@ import { use, useState } from 'react';
 import  './Login.css';
 import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase/Firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 function Login() {
 
     const navigate = useNavigate();
@@ -17,16 +19,19 @@ function Login() {
 
     const handleLogin = ()=>{
         if(loginDetails.email!=='' && loginDetails.password!==''){
-            
-            setLoginDetails({
-                email:'',
-                password:''
-            })
 
-            localStorage.setItem('loginStatus', true);
-            navigate('/');
-            
-        }else{
+            signInWithEmailAndPassword(auth,loginDetails.email, loginDetails.password)
+            .then((userCredential)=>{
+                localStorage.setItem("uid",userCredential.user.uid);
+                navigate('/');
+                
+            })
+            .catch((error)=>{
+                console.error('Login error:', error);
+                setErrorMessage(error.message);
+            });
+        }
+        else{
             setErrorMessage('Fill all details')
         }
     }
