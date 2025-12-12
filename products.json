@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Ikigai",
+      "author": "Andrew Hunt & David Thomas",
+      "description":"The Japanese Secret to a Long and Happy Life | A Global Self-Help Phenomenon that Guides You Towards a Joyful, Balanced, and Meaningful Life",
+      "price": 299.99,
+      "category": "Lifestyle",
+      "inStock": true,
+      "rating": 4.8,
+      "imageUrl":"https://m.media-amazon.com/images/I/81l3rZK4lnL._SY522_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "description":"A Handbook of Agile Software Craftsmanship",
+      "price": 24.99,
+      "category": "Programming",
+      "inStock": true,
+      "rating": 4.7,
+      "imageUrl":"https://m.media-amazon.com/images/I/71nj3JM-igL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "description":"An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "price": 18.0,
+      "category": "Self-help",
+      "inStock": false,
+      "rating": 4.6,
+      "imageUrl":"https://m.media-amazon.com/images/I/817HaeblezL._SY522_.jpg"
+    },
+    {
+        "id": 4,
+        "title":"Too good to be true",
+        "author":"Dr. Joe Vitale",  
+        "description":"The Extraordinary Story of a Small Town, a Big Mystery, and the Truth about the American Dream",
+        "price": 15.5,
+        "category":"Motivational",
+        "inStock": true,
+        "rating": 4.4,
+        "imageUrl":"https://m.media-amazon.com/images/I/818vo2TWp+L._AC_UY327_FMwebp_QL65_.jpg"
+
+    }
+  ]
+}

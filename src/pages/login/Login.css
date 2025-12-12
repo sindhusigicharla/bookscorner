@@ -1,0 +1,39 @@
+.login-details{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 236, 248);
+    width: 100%;
+    max-width: 60vw;
+    gap:20px;
+}
+.email{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    height: 25px;
+    background-color: white;
+    font-size: 20px;
+}
+.password{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    height: 25px;
+    background-color: white;
+    font-size: 20px;
+
+}
+.button{
+    background-color: rgb(16, 90, 120);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
