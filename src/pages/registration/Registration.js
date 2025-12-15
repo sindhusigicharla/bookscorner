@@ -28,6 +28,7 @@ function Registration(){
             })
            localStorage.setItem('loginStatus', true);
             navigate('/');
+
         }
     }
 
